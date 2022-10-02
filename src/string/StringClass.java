@@ -3,13 +3,24 @@ package string;
 public class StringClass {
 
 	public static void main(String[] args) {
-		String name = "Dev";
-		String city = new String("Pune");
-		String name1 = new String("Dev");
-		String city1 = "Pune";
-		String name2 = "Dev";
-		String name3 = "Ajay";
-		String name4 = "Monica";
+		
+		String city1 = new String("Pune");
+		String city2 = new String("Pune");
+		
+		// == operator is used for reference comparison (address comparison).
+		// .equals() --> this method is used for content comparison
+		System.out.println(city1==city2);  //
+		System.out.println(city1.equals(city2));  // True
+		
+		String city3 = "Pune";
+		String city4 = "Pune";
+		System.out.println(city3.equals(city4));   // True
+		System.out.println(city3==city4);   // True
+		
+		String city5 = new String("Pune");
+		System.out.println(city4==city5);  // false
+		System.out.println(city4.equals(city5)); 
+	
 
 	}
 
